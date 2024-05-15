@@ -112,5 +112,22 @@ EOF
 }
 system_java
 
+system_db
+system_db() {
+# install java
+  print_banner
+  printf "${WHITE} 💻 Instalando Banco de Dados...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo apt install mysql-server -y
+EOF
+
+  sleep 2
+}
+system_db
+
 
 ## bash <(curl -sSL setup.bytehost.com.br)
