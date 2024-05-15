@@ -1,19 +1,12 @@
 #!/bin/bash
-#
-# Print banner art.
-
 #######################################
-# Print a board. 
-# Globals:
-#   BG_BROWN
-#   NC
-#   WHITE
-#   CYAN_LIGHT
-#   RED
-#   GREEN
-#   YELLOW
-# Arguments:
-#   None
+# color
+readonly RED="\033[1;31m"
+readonly GREEN="\033[1;32m"
+readonly WHITE="\033[1;37m"
+readonly YELLOW="\033[1;33m"
+readonly GRAY_LIGHT="\033[0;37m"
+readonly CYAN_LIGHT="\033[1;36m"
 #######################################
 
 print_banner() {
@@ -65,7 +58,6 @@ if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
     echo "Este script recomenda o uso do Ubuntu 20.04."
     sleep 3
 fi
-
 
 atulizando_systema() {
     # update and install dependencies required by metabase
