@@ -63,7 +63,7 @@ fi
 system_date 
 system_date () {
   print_banner
-  printf "${WHITE} 💻 Ajustando horario do Linux...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ajustando horario do Servidor...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -197,7 +197,6 @@ metabase_config() {
   sudo touch /etc/default/metabase
   sudo chmod 775 /etc/default/metabase
   
-  
 EOF
   sleep 2
 }
@@ -283,8 +282,10 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
-END 
-
+END
+    sudo systemctl daemon-reload
+    sudo systemctl enable metabase
+    sudo systemctl restart metabase
 EOF
   sleep 2
 }
