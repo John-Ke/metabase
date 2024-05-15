@@ -78,21 +78,22 @@ EOF
 
 system_update 
 
-#system_dependencies() {
-#  print_banner
-#  printf "${WHITE} 💻 Instalando dependencies...${GRAY_LIGHT}"
-#  printf "\n\n"
-#
-#  sleep 2
-#
-#  sudo su - root <<EOF
-#  sudo apt-get install -y apt-utils && sudo apt-get install net-tools
-#EOF
-#
-#  sleep 2
-#}
+system_dependencies
 
-#system_dependencies
+system_dependencies() {
+  print_banner
+  printf "${WHITE} 💻 Instalando dependencies...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo apt-get install -y apt-utils && sudo apt-get install net-tools
+EOF
+
+  sleep 2
+}
+system_dependencies
 
 # install java
 sudo apt install openjdk-11-jdk openjdk-11-jre
