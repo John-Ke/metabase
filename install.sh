@@ -88,14 +88,29 @@ system_dependencies() {
   sleep 2
 
   sudo su - root <<EOF
-  sudo apt-get install -y apt-utils && sudo apt-get install net-tools
+  sudo apt-get install apt-utils -y && sudo apt-get install net-tools -y
 EOF
 
   sleep 2
 }
 system_dependencies
 
+system_java
+system_java() {
 # install java
-sudo apt install openjdk-11-jdk openjdk-11-jre
+  print_banner
+  printf "${WHITE} 💻 Instalando Java JDK...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo apt install openjdk-11-jdk openjdk-11-jre
+EOF
+
+  sleep 2
+}
+
+
 
 ## bash <(curl -sSL setup.bytehost.com.br)
