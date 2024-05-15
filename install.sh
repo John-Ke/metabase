@@ -14,7 +14,7 @@ print_banner() {
 
   printf "\n\n"
 
-  printf "${GREEN}";
+printf "${GREEN}";
 printf "'########::'##:::'##:'########:'########:\n";
 printf " ##.... ##:. ##:'##::... ##..:: ##.....::\n";
 printf " ##:::: ##::. ####:::::: ##:::: ##:::::::\n";
@@ -218,11 +218,77 @@ metabase_config_log() {
   & stop
 END
     sudo chmod 775 /var/log/metabase.log
+    sudo systemctl restart rsyslog.service
 EOF
   sleep 2
 }
 metabase_config_log
 
+metabase_config_db
+metabase_config_db() {
+  print_banner
+  printf "${WHITE} 💻 Conectado ao banco de dados do Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  cd /etc/default/
+  cat > metabase << 'END'
+  MB_PASSWORD_COMPLEXITY=strong
+  MB_PASSWORD_LENGTH=10
+  MB_DB_TYPE=mysql
+  MB_DB_DBNAME=metabase
+  MB_DB_PORT=3306
+  MB_DB_USER=metabase_user
+  MB_DB_PASS=Mj@45900
+  MB_DB_HOST=localhost
+  MB_EMOJI_IN_LOGS=true
+  MB_JETTY_PORT=3000
+END
+    sudo chmod 775 /var/log/metabase.log
+    sudo systemctl restart rsyslog.service
+EOF
+  sleep 2
+}
+metabase_config_db
+
+metabase_config_servico
+metabase_config_servico() {
+  print_banner
+  printf "${WHITE} 💻 Criando servico  do Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  cd /etc/systemd/system/
+  cat > metabase.service << 'END'
+  [Unit]
+  Description=Metabase server
+  After=syslog.target
+  After=network.target
+  [Service]
+  WorkingDirectory=/home/metabase/
+  ExecStart=/usr/bin/java -jar /home/metabase/metabase.jar
+  EnvironmentFile=/etc/default/metabase
+  User=metabase
+  Type=simple
+  StandardOutput=syslog
+  StandardError=syslog
+  SyslogIdentifier=metabase
+  SuccessExitStatus=143
+  TimeoutStopSec=120
+  Restart=always
+  [Install]
+  WantedBy=multi-user.target
+END 
+  sudo systemctl daemon-reload
+  sudo systemctl enable metabase
+  sudo systemctl restart metabase
+EOF
+  sleep 2
+}
+metabase_config_servico
 
 ## bash <(curl -sSL setup.bytehost.com.br)
-## https://downloads.metabase.com/v0.49.10/metabase.jar
