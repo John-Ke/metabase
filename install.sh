@@ -204,7 +204,7 @@ EOF
 metabase_config
 
 metabase_config_log
-metabase_config() {
+metabase_config_log() {
   print_banner
   printf "${WHITE} 💻 Ajustando logs do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
