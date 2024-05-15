@@ -95,7 +95,7 @@ EOF
 }
 system_dependencies
 
-system_java
+
 system_java() {
 # install java
   print_banner
@@ -110,7 +110,7 @@ EOF
 
   sleep 2
 }
-
+system_java
 
 
 ## bash <(curl -sSL setup.bytehost.com.br)
