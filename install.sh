@@ -15,7 +15,7 @@
 # Arguments:
 #   None
 #######################################
-print_banner() {
+
 
   clear
 
@@ -44,7 +44,6 @@ printf ".........::::::..::::::::..:::::........:\n";
   printf "${NC}";
 
   printf "\n"
-}
 
 # Verifica se o usuário é root
 if [ "$(id -u)" -ne 0 ]; then
