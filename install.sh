@@ -38,6 +38,7 @@ printf ".........::::::..::::::::..:::::........:\n";
   sleep 2
 
   printf "\n"
+  printf "\n"
   }
 print_banner
 # Verifica se o usuário é root
@@ -59,9 +60,23 @@ if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
     sleep 3
 fi
 
- # dependencies related
-system_update 
+system_date 
+system_date () {
+  print_banner
+  printf "${WHITE} 💻 Ajustando horario do Linux...${GRAY_LIGHT}"
+  printf "\n\n"
 
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo timedatectl set-timezone America/Belem
+EOF
+
+  sleep 2
+}
+system_date  
+
+system_update 
 system_update() {
   print_banner
   printf "${WHITE} 💻 Vamos atualizar o sistema...${GRAY_LIGHT}"
@@ -75,11 +90,9 @@ EOF
 
   sleep 2
 }
-
 system_update 
 
 system_dependencies
-
 system_dependencies() {
   print_banner
   printf "${WHITE} 💻 Instalando dependencias...${GRAY_LIGHT}"
@@ -129,7 +142,6 @@ EOF
 }
 system_db
 
-
 system_db_conf
 system_db_conf() {
 # install java
@@ -141,7 +153,6 @@ system_db_conf() {
 
   sudo su - root <<EOF
   sudo mysql -u root -pa8e3dd84
-  
   CREATE DATABASE metabase;
   CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
   GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
@@ -153,11 +164,5 @@ EOF
 }
 system_db_conf
 
-
-#echo "Banco de dados metabase criado com sucesso."
-#                else
-#                    echo "Usando o banco de dados existente."
-#                fi
-#                break
 
 ## bash <(curl -sSL setup.bytehost.com.br)
