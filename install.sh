@@ -235,16 +235,16 @@ metabase_config_db() {
   sudo su - root <<EOF
   cd /etc/default/
   cat > metabase << 'END'
-  MB_PASSWORD_COMPLEXITY=strong
-  MB_PASSWORD_LENGTH=10
-  MB_DB_TYPE=mysql
-  MB_DB_DBNAME=metabase
-  MB_DB_PORT=3306
-  MB_DB_USER=metabase_user
-  MB_DB_PASS=Mj@45900
-  MB_DB_HOST=localhost
-  MB_EMOJI_IN_LOGS=true
-  MB_JETTY_PORT=3000
+MB_PASSWORD_COMPLEXITY=strong
+MB_PASSWORD_LENGTH=10
+MB_DB_TYPE=mysql
+MB_DB_DBNAME=metabase
+MB_DB_PORT=3306
+MB_DB_USER=metabase_user
+MB_DB_PASS=Mj@45900
+MB_DB_HOST=localhost
+MB_EMOJI_IN_LOGS=true
+MB_JETTY_PORT=3000
 END
     sudo chmod 775 /var/log/metabase.log
     sudo systemctl restart rsyslog.service
@@ -264,28 +264,25 @@ metabase_config_servico() {
   sudo su - root <<EOF
   cd /etc/systemd/system/
   cat > metabase.service << 'END'
-  [Unit]
-  Description=Metabase server
-  After=syslog.target
-  After=network.target
-  [Service]
-  WorkingDirectory=/home/metabase/
-  ExecStart=/usr/bin/java -jar /home/metabase/metabase.jar
-  EnvironmentFile=/etc/default/metabase
-  User=metabase
-  Type=simple
-  StandardOutput=syslog
-  StandardError=syslog
-  SyslogIdentifier=metabase
-  SuccessExitStatus=143
-  TimeoutStopSec=120
-  Restart=always
-  [Install]
-  WantedBy=multi-user.target
+[Unit]
+Description=Metabase server
+After=syslog.target
+After=network.target
+[Service]
+WorkingDirectory=/home/metabase/
+ExecStart=/usr/bin/java -jar /home/metabase/metabase.jar
+EnvironmentFile=/etc/default/metabase
+User=metabase
+Type=simple
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=metabase
+SuccessExitStatus=143
+TimeoutStopSec=120
+Restart=always
+[Install]
+WantedBy=multi-user.target
 END 
-  sudo systemctl daemon-reload
-  sudo systemctl enable metabase
-  sudo systemctl restart metabase
 EOF
   sleep 2
 }
