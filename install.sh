@@ -122,7 +122,7 @@ system_db() {
   sleep 2
 
   sudo su - root <<EOF
-  sudo apt install mysql-server -y
+  sudo apt-get install mysql-server mysql-client -y
 EOF
 
   sleep 2
@@ -140,7 +140,8 @@ system_db_conf() {
   sleep 2
 
   sudo su - root <<EOF
-  sudo mysql -u root -p a8e3dd84
+  sudo mysql -u root -pa8e3dd84
+  
   CREATE DATABASE metabase;
   CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
   GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
@@ -152,5 +153,11 @@ EOF
 }
 system_db_conf
 
+
+#echo "Banco de dados metabase criado com sucesso."
+#                else
+#                    echo "Usando o banco de dados existente."
+#                fi
+#                break
 
 ## bash <(curl -sSL setup.bytehost.com.br)
