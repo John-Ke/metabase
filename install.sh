@@ -59,19 +59,15 @@ if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
     sleep 3
 fi
 
-atulizando_systema() {
-    # update and install dependencies required by metabase
+system_dependencies() {
   print_banner
-  printf "${WHITE} 💻 Atualizando dependencias ...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Instalando dependencies...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
 
- sudo apt-get install -y apt-utils
-
-sudo apt update
-
-sudo apt upgrade -y
+  sudo su - root <<EOF
+  sudo apt-get install -y apt-utils && sudo apt-get install net-tools
 EOF
 
   sleep 2
