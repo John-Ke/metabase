@@ -68,6 +68,7 @@ fi
 
 
 atulizando_systema() {
+    # update and install dependencies required by metabase
   print_banner
   printf "${WHITE} 💻 Atualizando dependencias ...${GRAY_LIGHT}"
   printf "\n\n"
@@ -83,13 +84,6 @@ EOF
 
   sleep 2
 }
-
-# update and install dependencies required by metabase
-sudo apt-get install -y apt-utils
-
-sudo apt update
-
-sudo apt upgrade -y
 
 # install java
 sudo apt install openjdk-11-jdk openjdk-11-jre
