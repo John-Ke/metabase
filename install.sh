@@ -283,12 +283,28 @@ Restart=always
 WantedBy=multi-user.target
 
 END
+
+EOF
+  sleep 2
+}
+metabase_config_servico
+
+
+metabase_ativacao
+metabase_ativacao() {
+  print_banner
+  printf "${WHITE} 💻 Ativando o Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
     sudo systemctl daemon-reload
     sudo systemctl enable metabase
     sudo systemctl restart metabase
 EOF
   sleep 2
 }
-metabase_config_servico
+metabase_ativacao
 
 ## bash <(curl -sSL setup.bytehost.com.br)
