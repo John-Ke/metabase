@@ -213,8 +213,8 @@ metabase_config_log() {
   sudo su - root <<EOF
   cd /etc/rsyslog.d/
   cat > metabase.conf << 'END'
-  if $programname == 'metabase' then /var/log/metabase.log
-  & stop
+if '$programname' == 'metabase' then /var/log/metabase.log
+& stop
 END
     sudo chmod 775 /var/log/metabase.log
     sudo systemctl restart rsyslog.service
