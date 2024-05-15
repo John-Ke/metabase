@@ -142,27 +142,49 @@ EOF
 }
 system_db
 
-system_db_conf
-system_db_conf() {
+#system_db_conf
+#system_db_conf() {
+#  print_banner
+#  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
+#  printf "\n\n"
+#
+#  sleep 2
+#
+#  sudo su - root <<EOF
+#  sudo mysql -u root -pa8e3dd84
+#  CREATE DATABASE metabase;
+#  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
+#  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
+#  FLUSH PRIVILEGES;
+#  EXIT;
+#EOF
+#
+#  sleep 2
+#}
+#system_db_conf
+
+metabase_download
+metabase_download() {
 # install java
   print_banner
-  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Donwload do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
 
   sudo su - root <<EOF
-  sudo mysql -u root -pa8e3dd84
-  CREATE DATABASE metabase;
-  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
-  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
-  FLUSH PRIVILEGES;
-  EXIT;
+  sudo mkdir /home/metabase
+  cd /home/metabase
+  sudo wget https://downloads.metabase.com/v0.49.10/metabase.jar
+  
 EOF
 
   sleep 2
 }
-system_db_conf
+metabase_download
 
 
 ## bash <(curl -sSL setup.bytehost.com.br)
+
+
+# https://downloads.metabase.com/v0.49.10/metabase.jar
