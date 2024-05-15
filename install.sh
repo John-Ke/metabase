@@ -59,6 +59,22 @@ if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
     sleep 3
 fi
 
+ # dependencies related
+system_update
+system_update() {
+  print_banner
+  printf "${WHITE} 💻 Vamos atualizar o sistema...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  apt -y update && apt -y upgrade
+EOF
+
+  sleep 2
+}
+
 system_dependencies() {
   print_banner
   printf "${WHITE} 💻 Instalando dependencies...${GRAY_LIGHT}"
