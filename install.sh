@@ -16,7 +16,7 @@
 #   None
 #######################################
 
-
+print_banner() {
   clear
 
   printf "\n\n"
@@ -42,13 +42,16 @@ printf ".........::::::..::::::::..:::::........:\n";
   printf "\n";
   printf " © Bytehost.com.br\n";
   printf "${NC}";
+  sleep 4
 
   printf "\n"
-
+  }
+print_banner
 # Verifica se o usuário é root
 if [ "$(id -u)" -ne 0 ]; then
     echo "Este script precisa ser executado como root. Executando sudo su..."
     sudo su
+    sleep 2
 fi
 
 # Verifica se o usuário está no diretório /root/
@@ -63,6 +66,24 @@ if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
     sleep 3
 fi
 
+
+atulizando_systema() {
+  print_banner
+  printf "${WHITE} 💻 Atualizando dependencias ...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+ sudo apt-get install -y apt-utils
+
+sudo apt update
+
+sudo apt upgrade -y
+EOF
+
+  sleep 2
+}
+
 # update and install dependencies required by metabase
 sudo apt-get install -y apt-utils
 
@@ -72,3 +93,5 @@ sudo apt upgrade -y
 
 # install java
 sudo apt install openjdk-11-jdk openjdk-11-jre
+
+## bash <(curl -sSL setup.bytehost.com.br)
