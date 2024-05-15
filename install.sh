@@ -35,7 +35,7 @@ printf ".........::::::..::::::::..:::::........:\n";
   printf "\n";
   printf " © Bytehost.com.br\n";
   printf "${NC}";
-  sleep 4
+  sleep 2
 
   printf "\n"
   }
@@ -60,7 +60,7 @@ if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
 fi
 
  # dependencies related
-system_update
+
 system_update() {
   print_banner
   printf "${WHITE} 💻 Vamos atualizar o sistema...${GRAY_LIGHT}"
@@ -75,6 +75,8 @@ EOF
   sleep 2
 }
 
+system_update 
+
 system_dependencies() {
   print_banner
   printf "${WHITE} 💻 Instalando dependencies...${GRAY_LIGHT}"
@@ -88,7 +90,7 @@ EOF
 
   sleep 2
 }
-
+system_dependencies
 # install java
 sudo apt install openjdk-11-jdk openjdk-11-jre
 
