@@ -95,7 +95,7 @@ EOF
 }
 system_dependencies
 
-
+system_java
 system_java() {
 # install java
   print_banner
