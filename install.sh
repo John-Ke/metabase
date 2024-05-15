@@ -82,7 +82,7 @@ system_dependencies
 
 system_dependencies() {
   print_banner
-  printf "${WHITE} 💻 Instalando dependencies...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Instalando dependencias...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -128,6 +128,29 @@ EOF
   sleep 2
 }
 system_db
+
+
+system_db_conf
+system_db_conf() {
+# install java
+  print_banner
+  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo mysql -u root -p a8e3dd84
+  CREATE DATABASE metabase;
+  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
+  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
+  EXIT;
+EOF
+
+  sleep 2
+}
+system_db_conf
 
 
 ## bash <(curl -sSL setup.bytehost.com.br)
