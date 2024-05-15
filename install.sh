@@ -27,5 +27,3 @@ sudo apt upgrade -y
 
 # install java
 sudo apt install openjdk-11-jdk openjdk-11-jre
-
-# add user & group
