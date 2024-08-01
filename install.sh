@@ -185,7 +185,7 @@ metabase_config() {
   printf "${WHITE} 💻 Ajustando o ambiente para o Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
-  sleep 2
+  sleep 3
 
   sudo su - root <<EOF
   cd /home/metabase
@@ -198,7 +198,7 @@ metabase_config() {
   sudo chmod 777 /etc/default/metabase
   
 EOF
-  sleep 2
+  sleep 3
 }
 metabase_config
 
@@ -213,11 +213,12 @@ metabase_config_log() {
   sudo su - root <<EOF
   cd /etc/rsyslog.d/
   cat > metabase.conf << 'END'
-if "${programname}" == 'metabase' then /var/log/metabase.log
+if '$programname' == 'metabase' then /var/log/metabase.log
 & stop
 END
-    sudo chmod 775 /var/log/metabase.log
+    sudo chmod 777 /var/log/metabase.log
     sudo systemctl restart rsyslog.service
+## aqui ainda tem que editar manualmente 
 EOF
   sleep 2
 }
@@ -245,7 +246,7 @@ MB_DB_HOST=localhost
 MB_EMOJI_IN_LOGS=true
 MB_JETTY_PORT=3000
 END
-    sudo chmod 775 /var/log/metabase.log
+    sudo chmod 777 /var/log/metabase.log
     sudo systemctl restart rsyslog.service
 EOF
   sleep 2
