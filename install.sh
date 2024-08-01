@@ -140,26 +140,26 @@ EOF
 }
 system_db
 
-#system_db_conf
-#system_db_conf() {
-#  print_banner
-#  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
-#  printf "\n\n"
-#
-#  sleep 2
-#
-#  sudo su - root <<EOF
-#  sudo mysql -u root -pa8e3dd84
-#  CREATE DATABASE metabase;
-#  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
-#  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
-#  FLUSH PRIVILEGES;
-#  EXIT;
-#EOF
-#
-#  sleep 2
-#}
-#system_db_conf
+system_db_conf
+system_db_conf() {
+  print_banner
+  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo mysql -u root -pa8e3dd84
+  CREATE DATABASE metabase;
+  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
+  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
+  EXIT;
+EOF
+
+  sleep 2
+}
+system_db_conf
 
 metabase_download
 metabase_download() {
@@ -195,7 +195,7 @@ metabase_config() {
   sudo touch /var/log/metabase.log
   sudo chown metabase:metabase /var/log/metabase.log
   sudo touch /etc/default/metabase
-  sudo chmod 775 /etc/default/metabase
+  sudo chmod 777 /etc/default/metabase
   
 EOF
   sleep 2
@@ -205,7 +205,7 @@ metabase_config
 metabase_config_log
 metabase_config_log() {
   print_banner
-  printf "${WHITE} 💻 Ajustando logs do Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Criando logs do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -213,7 +213,7 @@ metabase_config_log() {
   sudo su - root <<EOF
   cd /etc/rsyslog.d/
   cat > metabase.conf << 'END'
-if '$programname' == 'metabase' then /var/log/metabase.log
+if "${programname}" == 'metabase' then /var/log/metabase.log
 & stop
 END
     sudo chmod 775 /var/log/metabase.log
@@ -269,7 +269,7 @@ After=syslog.target
 After=network.target
 [Service]
 WorkingDirectory=/home/metabase/
-ExecStart=/usr/bin/java -jar /home/metabase/metabase.jar
+ExecStart=/usr/bin/java -Duser.timezone=UTC -jar /home/metabase/metabase.jar
 EnvironmentFile=/etc/default/metabase
 User=metabase
 Type=simple
