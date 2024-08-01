@@ -172,7 +172,7 @@ metabase_download() {
   sudo su - root <<EOF
   sudo mkdir /home/metabase
   cd /home/metabase
-#  sudo wget https://downloads.metabase.com/v0.49.10/metabase.jar
+  sudo wget https://downloads.metabase.com/v0.49.10/metabase.jar
   
 EOF
   sleep 2
