@@ -21,12 +21,12 @@ clear
 echo "#--------------------------------------------------------#"
 echo      "CRIANDO SCRIPT DE INICIALIZACAO"
 echo "#--------------------------------------------------------#"
-touch /usr/share/metabase/start-metabase-mysql.sh
-cat <<EOF | sudo tee /usr/share/metabase/start-metabase-mysql.sh
+touch /opt/metabase/start-metabase-mysql.sh
+cat <<EOF | sudo tee /opt/metabase/start-metabase-mysql.sh
 #!/bin/bash
 MB_ENCRYPTION_SECRET_KEY=gftfkCjdIqo4bugIBGlMsdfsd$dbpasswd= MB_DB_CONNECTION_URI="mysql://$dbipserver:3306/$dbname?user=$dbuser&password=$dbpasswd" java -jar /usr/share/metabase/metabase.jar
 EOF
-chmod +x /usr/share/metabase/start-metabase-mysql.sh
+chmod +x /opt/metabase/start-metabase-mysql.sh
 echo "#--------------------------------------------------------#"
 echo              "RECRIANDO ARQUIVO DE SERVICO"
 echo "#--------------------------------------------------------#"
@@ -53,7 +53,3 @@ echo "#--------------------------------------------------------#"
 systemctl restart metabase
 tail -f /var/log/metabase.log
 echo FIM
-
-#------------------------------
-# OPÇÃO 2 CASO DER ERRO NA DE CIMA
-# java -DMB_DB_TYPE=mysql -DMB_DB_CONNECTION_URI="jdbc:mysql://localhost:3306/metabase?user=metabase&password=SUA-SENHA-ALTERAR&useSSL=false&allowPublicKeyRetrieval=true" -jar metabase.jar load-from-h2 metabase.db
