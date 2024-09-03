@@ -140,6 +140,26 @@ EOF
 }
 system_db
 
+system_db_conf
+system_db_conf() {
+  print_banner
+  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo mysql -u root -pa8e3dd84
+  CREATE DATABASE metabase;
+  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
+  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
+  EXIT;
+EOF
+
+  sleep 2
+}
+system_db_conf
 
 metabase_download
 metabase_download() {
@@ -285,6 +305,7 @@ metabase_ativacao() {
     sudo systemctl daemon-reload
     sudo systemctl enable metabase
     sudo systemctl restart metabase
+    history -c
 EOF
   sleep 2
 }
