@@ -35,22 +35,22 @@ systemctl enable metabase
 echo "#-----------------------------------------#"
 echo        "MIGRAR DE H2 PARA MYSQL"
 echo "#-----------------------------------------#"
-cd /usr/share/metabase
+cd /opt/metabase
 export MB_DB_TYPE=mysql
 export MB_DB_DBNAME=$dbname
 export MB_DB_PORT=3306
 export MB_DB_USER=$dbuser
 export MB_DB_PASS=$dbpasswd
 export MB_DB_HOST=$dbipserver
-java -jar metabase.jar load-from-h2 /usr/share/metabase/metabase.db
+java -jar metabase.jar load-from-h2 /opt/metabase/metabase.db
 echo "#--------------------------------------------------------#"
 echo             "MOVENDO ARQUIVOS DO BANCO H2"
 echo "#--------------------------------------------------------#"
-mv /usr/share/metabase/*.db /tmp
+mv /opt/metabase/*.db /tmp
 echo "#--------------------------------------------------------#"
 echo            "INICIANDO METABASE COM MYSQL"
 echo "#--------------------------------------------------------#"
-systemctl start metabase
+systemctl restart metabase
 tail -f /var/log/metabase.log
 echo FIM
 
