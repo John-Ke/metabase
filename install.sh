@@ -134,32 +134,12 @@ system_db() {
   sleep 2
 
   sudo su - root <<EOF
-  sudo apt-get install mysql-server mysql-client -y
+  Pru
 EOF
   sleep 2
 }
 system_db
 
-system_db_conf
-system_db_conf() {
-  print_banner
-  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
-  printf "\n\n"
-
-  sleep 2
-
-  sudo su - root <<EOF
-  sudo mysql -u root -pa8e3dd84
-  CREATE DATABASE metabase;
-  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
-  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
-  FLUSH PRIVILEGES;
-  EXIT;
-EOF
-
-  sleep 2
-}
-system_db_conf
 
 metabase_download
 metabase_download() {
@@ -185,20 +165,21 @@ metabase_config() {
   printf "${WHITE} 💻 Ajustando o ambiente para o Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
-  sleep 3
+  sleep 2
 
   sudo su - root <<EOF
   cd /home/metabase
+  sudo chmod 777 /opt/metabase
   sudo groupadd -r metabase
   sudo useradd -r -s /bin/false -g metabase metabase
-  sudo chown -R metabase:metabase /home/metabase
+  sudo chown -R metabase:metabase /opt/metabase
   sudo touch /var/log/metabase.log
   sudo chown metabase:metabase /var/log/metabase.log
   sudo touch /etc/default/metabase
   sudo chmod 777 /etc/default/metabase
   
 EOF
-  sleep 3
+  sleep 2
 }
 metabase_config
 
@@ -213,14 +194,15 @@ metabase_config_log() {
   sudo su - root <<EOF
   cd /etc/rsyslog.d/
   cat > metabase.conf << 'END'
-if '$programname' == 'metabase' then /var/log/metabase.log
+if "${programname}" == 'metabase' then /var/log/metabase.log
 & stop
 END
     sudo chmod 777 /var/log/metabase.log
     sudo systemctl restart rsyslog.service
-## aqui ainda tem que editar manualmente 
 EOF
   sleep 2
+# aqui ainda tem que editar manualmente o aqruivo comando: nano etc/rsyslog.d/metabase.conf 
+# editar a primeira linha pra ficar assim: if $programname == 'metabase' then /var/log/metabase.log
 }
 metabase_config_log
 
@@ -241,12 +223,12 @@ MB_DB_TYPE=mysql
 MB_DB_DBNAME=metabase
 MB_DB_PORT=3306
 MB_DB_USER=metabase_user
-MB_DB_PASS=Mj@45900
+MB_DB_PASS=Prud3246@
 MB_DB_HOST=localhost
 MB_EMOJI_IN_LOGS=true
 MB_JETTY_PORT=3000
 END
-    sudo chmod 777 /var/log/metabase.log
+    sudo chmod 775 /var/log/metabase.log
     sudo systemctl restart rsyslog.service
 EOF
   sleep 2
