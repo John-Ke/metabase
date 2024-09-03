@@ -1,25 +1,8 @@
-
 #------------------------------------------------
 #  MIGRACAO AUTOMATIZADA DO BANCO H2 PARA MYSQL 
 #        DO METABASE NO ORACLE LINUX 8
 #------------------------------------------------
-#
-#    Desenvolvido por: Service TIC Solucoes Tecnologicas
-#              E-mail: contato@servicetic.com.br
-#                Site: www.servicetic.com.br
-#            Linkedin: https://www.linkedin.com/company/serviceticst
-#            Intagram: https://www.instagram.com/serviceticst
-#            Facebook: https://www.facebook.com/serviceticst
-#             Twitter: https://twitter.com/serviceticst
-#             YouTube: https://youtube.com/c/serviceticst
-#              GitHub: https://github.com/serviceticst
-#
-#                Blog: https://servicetic.com.br/metabase-migracao-do-banco-h2-para-mysql
-#             YouTube: https://youtu.be/Lopw-SjgX0U
-#
-#-------------------------------------------------
-#    Instalação MySLQ: https://github.com/serviceticst/sgdb/blob/main/INSTALL_MYSQL_8_ORACLE_LINUX_8.txt
-# Criação do BD MySQL: https://github.com/serviceticst/metabase/blob/main/CRIACAO_BANCO_MYSQL_METABASE.txt
+
 #-------------------------------------------------
 #
 echo "#--------------------------------------------------------#"
@@ -47,27 +30,6 @@ chmod +x /usr/share/metabase/start-metabase-mysql.sh
 echo "#--------------------------------------------------------#"
 echo              "RECRIANDO ARQUIVO DE SERVICO"
 echo "#--------------------------------------------------------#"
-rm -f /etc/systemd/system/metabase.service
-cat <<EOF | sudo tee /etc/systemd/system/metabase.service
-[Unit]
-Description=Metabase server
-After=syslog.target
-After=network.target
-[Service]
-WorkingDirectory=/usr/share/metabase
-ExecStart=/usr/share/metabase/start-metabase-mysql.sh
-EnvironmentFile=/etc/default/metabase
-User=metabase
-Type=simple
-StandardOutput=syslog
-StandardError=syslog
-SyslogIdentifier=metabase
-SuccessExitStatus=143
-TimeoutStopSec=120
-Restart=always
-[Install]
-WantedBy=multi-user.target
-EOF
 systemctl daemon-reload
 systemctl enable metabase
 echo "#-----------------------------------------#"
