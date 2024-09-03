@@ -1,10 +1,3 @@
-#------------------------------------------------
-#  MIGRACAO AUTOMATIZADA DO BANCO H2 PARA MYSQL 
-#        DO METABASE NO ORACLE LINUX 8
-#------------------------------------------------
-
-#-------------------------------------------------
-#
 echo "#--------------------------------------------------------#"
 echo             "PARANDO SERVICO DO METABASE"
 echo "#--------------------------------------------------------#"
@@ -21,12 +14,12 @@ clear
 echo "#--------------------------------------------------------#"
 echo      "CRIANDO SCRIPT DE INICIALIZACAO"
 echo "#--------------------------------------------------------#"
-touch /opt/metabase/start-metabase-mysql.sh
-cat <<EOF | sudo tee /opt/metabase/start-metabase-mysql.sh
+touch /opt/metabase/metabase/start-metabase-mysql.sh
+cat <<EOF | sudo tee /opt/metabase/metabase/start-metabase-mysql.sh
 #!/bin/bash
 MB_ENCRYPTION_SECRET_KEY=gftfkCjdIqo4bugIBGlMsdfsd$dbpasswd= MB_DB_CONNECTION_URI="mysql://$dbipserver:3306/$dbname?user=$dbuser&password=$dbpasswd" java -jar /usr/share/metabase/metabase.jar
 EOF
-chmod +x /opt/metabase/start-metabase-mysql.sh
+chmod +x /opt/metabase/metabase/start-metabase-mysql.sh
 echo "#--------------------------------------------------------#"
 echo              "RECRIANDO ARQUIVO DE SERVICO"
 echo "#--------------------------------------------------------#"
@@ -42,14 +35,14 @@ export MB_DB_PORT=3306
 export MB_DB_USER=$dbuser
 export MB_DB_PASS=$dbpasswd
 export MB_DB_HOST=$dbipserver
-java -jar metabase.jar load-from-h2 /opt/metabase/metabase.db
+java -jar metabase.jar load-from-h2 /opt/metabase/metabase/metabase.db
 echo "#--------------------------------------------------------#"
 echo             "MOVENDO ARQUIVOS DO BANCO H2"
 echo "#--------------------------------------------------------#"
-mv /opt/metabase/*.db /tmp
+mv /opt/metabase/metabase/*.db /tmp
 echo "#--------------------------------------------------------#"
 echo            "INICIANDO METABASE COM MYSQL"
 echo "#--------------------------------------------------------#"
-systemctl restart metabase
+systemctl start metabase
 tail -f /var/log/metabase.log
 echo FIM
