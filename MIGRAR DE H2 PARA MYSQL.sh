@@ -15,7 +15,7 @@ echo "#--------------------------------------------------------#"
 echo      "CRIANDO SCRIPT DE INICIALIZACAO"
 echo "#--------------------------------------------------------#"
 touch /opt/metabase/start-metabase-mysql.sh
-cat <<EOF | sudo tee /opt/metabase/metabase/start-metabase-mysql.sh
+cat <<EOF | sudo tee /opt/metabase/start-metabase-mysql.sh
 #!/bin/bash
 MB_ENCRYPTION_SECRET_KEY=gftfkCjdIqo4bugIBGlMsdfsd$dbpasswd= MB_DB_CONNECTION_URI="mysql://$dbipserver:3306/$dbname?user=$dbuser&password=$dbpasswd" java -jar /opt/metabase/metabase.jar
 EOF
@@ -39,7 +39,7 @@ java -jar metabase.jar load-from-h2 /opt/metabase/metabase.db
 echo "#--------------------------------------------------------#"
 echo             "MOVENDO ARQUIVOS DO BANCO H2"
 echo "#--------------------------------------------------------#"
-mv /opt/metabase/metabase/*.db /tmp
+mv /opt/metabase/*.db /tmp
 echo "#--------------------------------------------------------#"
 echo            "INICIANDO METABASE COM MYSQL"
 echo "#--------------------------------------------------------#"
