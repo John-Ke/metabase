@@ -63,7 +63,7 @@ fi
 system_date 
 system_date () {
   print_banner
-  printf "${WHITE} �� Ajustando horario do Servidor...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ajustando horario do Servidor...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -79,7 +79,7 @@ system_date
 system_update 
 system_update() {
   print_banner
-  printf "${WHITE} �� Vamos atualizar o sistema...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Vamos atualizar o sistema...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -95,7 +95,7 @@ system_update
 system_dependencies
 system_dependencies() {
   print_banner
-  printf "${WHITE} �� Instalando dependencias...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Instalando dependencias...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -111,7 +111,7 @@ system_dependencies
 system_java
 system_java() {
   print_banner
-  printf "${WHITE} �� Instalando Java JDK...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Instalando Java JDK...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -128,7 +128,7 @@ system_java
 system_db
 system_db() {
   print_banner
-  printf "${WHITE} �� Instalando Banco de Dados...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Instalando Banco de Dados...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -143,7 +143,7 @@ system_db
 system_db_conf
 system_db_conf() {
   print_banner
-  printf "${WHITE} �� Configurando Banco de Dados...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Configurando Banco de Dados...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -164,7 +164,7 @@ system_db_conf
 metabase_download
 metabase_download() {
   print_banner
-  printf "${WHITE} �� Donwload do Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Donwload do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -182,17 +182,17 @@ metabase_download
 metabase_config
 metabase_config() {
   print_banner
-  printf "${WHITE} �� Aplicando permissoes ao Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Aplicando permissoes ao Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
 
   sudo su - root <<EOF
   cd /home/metabase
-  sudo chmod 777 /opt/metabase
+  sudo chmod 777 /home/metabase
   sudo groupadd -r metabase
   sudo useradd -r -s /bin/false -g metabase metabase
-  sudo chown -R metabase:metabase /opt/metabase
+  sudo chown -R metabase:metabase /home/metabase
   sudo touch /var/log/metabase.log
   sudo chown metabase:metabase /var/log/metabase.log
   sudo touch /etc/default/metabase
@@ -206,7 +206,7 @@ metabase_config
 metabase_config_log
 metabase_config_log() {
   print_banner
-  printf "${WHITE} �� Criando logs do Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Criando logs do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -229,7 +229,7 @@ metabase_config_log
 metabase_config_db
 metabase_config_db() {
   print_banner
-  printf "${WHITE} �� Conectado ao banco de dados do Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Conectado ao banco de dados do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -243,7 +243,7 @@ MB_DB_TYPE=mysql
 MB_DB_DBNAME=metabase
 MB_DB_PORT=3306
 MB_DB_USER=metabase_user
-MB_DB_PASS=Prud3246@
+MB_DB_PASS=Mj@45900
 MB_DB_HOST=localhost
 MB_EMOJI_IN_LOGS=true
 MB_JETTY_PORT=3000
@@ -258,7 +258,7 @@ metabase_config_db
 metabase_config_serv
 metabase_config_servico() {
   print_banner
-  printf "${WHITE} �� Criando servico  do Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Criando servico  do Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
@@ -296,7 +296,7 @@ metabase_config_servico
 metabase_ativacao
 metabase_ativacao() {
   print_banner
-  printf "${WHITE} �� Ativando o Metabase...${GRAY_LIGHT}"
+  printf "${WHITE} 💻 Ativando o Metabase...${GRAY_LIGHT}"
   printf "\n\n"
 
   sleep 2
