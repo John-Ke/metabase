@@ -1,314 +1,314 @@
-)rb.moc.tsohetyb.putes LSs- lruc(< hsab ##
-
-oacavita_esabatem
-}
-2 peels  
-FOE
-c- yrotsih    
-esabatem tratser ltcmetsys odus    
-esabatem elbane ltcmetsys odus    
-daoler-nomead ltcmetsys odus    
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...esabateM o odnavitA �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(oacavita_esabatem
-oacavita_esabatem
-
-
-ocivres_gifnoc_esabatem
-}
-2 peels  
-FOE
-
-DNE
-
-tegrat.resu-itlum=yBdetnaW
-]llatsnI[
-syawla=tratseR
-021=ceSpotStuoemiT
-341=sutatStixEsseccuS
-esabatem=reifitnedIgolsyS
-golsys=rorrEdradnatS
-golsys=tuptuOdradnatS
-elpmis=epyT
-esabatem=resU
-esabatem/tluafed/cte/=eliFtnemnorivnE
-raj.esabatem/esabatem/emoh/ raj- CTU=enozemit.resuD- avaj/nib/rsu/=tratScexE
-/esabatem/emoh/=yrotceriDgnikroW
-]ecivreS[
-tegrat.krowten=retfA
-tegrat.golsys=retfA
-revres esabateM=noitpircseD
-]tinU[
-'DNE' << ecivres.esabatem > tac  
-/metsys/dmetsys/cte/ dc  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...esabateM od  ocivres odnairC �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(ocivres_gifnoc_esabatem
-vres_gifnoc_esabatem
-
-bd_gifnoc_esabatem
-}
-2 peels  
-FOE
-ecivres.golsysr tratser ltcmetsys odus    
-gol.esabatem/gol/rav/ 577 domhc odus    
-DNE
-0003=TROP_YTTEJ_BM
-eurt=SGOL_NI_IJOME_BM
-tsohlacol=TSOH_BD_BM
-@6423durP=SSAP_BD_BM
-resu_esabatem=RESU_BD_BM
-6033=TROP_BD_BM
-esabatem=EMANBD_BD_BM
-lqsym=EPYT_BD_BM
-01=HTGNEL_DROWSSAP_BM
-gnorts=YTIXELPMOC_DROWSSAP_BM
-'DNE' << esabatem > tac  
-/tluafed/cte/ dc  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...esabateM od sodad ed ocnab oa odatcenoC �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(bd_gifnoc_esabatem
-bd_gifnoc_esabatem
-
-gol_gifnoc_esabatem
-}
-gol.esabatem/gol/rav/ neht 'esabatem' == emanmargorp$ fi :missa racif arp ahnil ariemirp a ratide #
- fnoc.esabatem/d.golsysr/cte onan :odnamoc oviurqa o etnemlaunam ratide euq met adnia iuqa #
-2 peels  
-FOE
-ecivres.golsysr tratser ltcmetsys odus    
-gol.esabatem/gol/rav/ 777 domhc odus    
-DNE
-pots &
-gol.esabatem/gol/rav/ neht 'esabatem' == "}emanmargorp{$" fi
-'DNE' << fnoc.esabatem > tac  
-/d.golsysr/cte/ dc  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...esabateM od sgol odnairC �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(gol_gifnoc_esabatem
-gol_gifnoc_esabatem
-
-gifnoc_esabatem
-}
-2 peels  
-FOE
-  
-esabatem/tluafed/cte/ 777 domhc odus  
-esabatem/tluafed/cte/ hcuot odus  
-gol.esabatem/gol/rav/ esabatem:esabatem nwohc odus  
-gol.esabatem/gol/rav/ hcuot odus  
-esabatem/tpo/ esabatem:esabatem R- nwohc odus  
-esabatem esabatem g- eslaf/nib/ s- r- ddaresu odus  
-esabatem r- ddapuorg odus  
-esabatem/tpo/ 777 domhc odus  
-esabatem/emoh/ dc  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...esabateM oa seossimrep odnacilpA �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(gifnoc_esabatem
-gifnoc_esabatem
-
-daolnwod_esabatem
-}
-2 peels  
-FOE
-  
-raj.esabatem/01.94.0v/moc.esabatem.sdaolnwod//:sptth tegw odus  
-esabatem/emoh/ dc  
-esabatem/emoh/ ridkm odus  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...esabateM od daolwnoD �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(daolnwod_esabatem
-daolnwod_esabatem
-
-fnoc_bd_metsys
-}
-2 peels  
-
-FOE
-;TIXE  
-;SEGELIVIRP HSULF  
-;NOITPO TNARG HTIW 'tsohlacol'@'resu_esabatem' OT *.esabatem NO LLA TNARG  
-;'00954@jM' YB DEIFITNEDI 'tsohlacol'@'resu_esabatem' RESU ETAERC  
-;esabatem ESABATAD ETAERC  
-48dd3e8ap- toor u- lqsym odus  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...sodaD ed ocnaB odnarugifnoC �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(fnoc_bd_metsys
-fnoc_bd_metsys
-
-bd_metsys
-}
-2 peels  
-FOE
-y- tneilc-lqsym llatsni teg-tpa odus && y- revres-lqsym llatsni tpa odus  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...sodaD ed ocnaB odnalatsnI �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(bd_metsys
-bd_metsys
-
-avaj_metsys
-}
-2 peels  
-
-FOE
-
-erj-11-kdjnepo kdj-11-kdjnepo llatsni tpa odus  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...KDJ avaJ odnalatsnI �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(avaj_metsys
-avaj_metsys
-
-seicnedneped_metsys
-}
-2 peels  
-
-FOE
-y- sloot-ten llatsni teg-tpa odus && y- slitu-tpa llatsni teg-tpa odus  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...saicnedneped odnalatsnI �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(seicnedneped_metsys
-seicnedneped_metsys
-
- etadpu_metsys
-}
-2 peels  
-
-FOE
-edargpu y- tpa && etadpu y- tpa  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...ametsis o razilauta somaV �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )(etadpu_metsys
- etadpu_metsys
-
-  etad_metsys
-}
-2 peels  
-
-FOE
-meleB/aciremA enozemit-tes ltcetademit odus  
-FOE<< toor - us odus  
-
-2 peels  
-
-"n\n\" ftnirp  
-"}THGIL_YARG{$...rodivreS od oiraroh odnatsujA �� }ETIHW{$" ftnirp  
-rennab_tnirp  
-{ )( etad_metsys
- etad_metsys
-
-if
-3 peels    
-".40.02 utnubU od osu o adnemocer tpircs etsE" ohce    
-neht ;esaeler-so/cte/ '40.02 utnubU' q- perg ! fi
-40.02 utnubU odnasu átse es acifireV #
-
-if
-tixe || toor/ dc    
-"/toor/ oiróterid o arap odnaduM" ohce    
-neht ;] "toor/" =! "DWP$" [ fi
-/toor/ oiróterid on átse oiráusu o es acifireV #
-
-if
-2 peels    
-us odus    
-"...us odus odnatucexE .toor omoc odatucexe res asicerp tpircs etsE" ohce    
-neht ;] 0 en- ")u- di($" [ fi
-toor é oiráusu o es acifireV #
-rennab_tnirp
-}  
-"n\" ftnirp  
-"n\" ftnirp  
-
-2 peels  
-;"}CN{$" ftnirp  
-;"n\rb.moc.tsohetyB © " ftnirp  
-;"n\" ftnirp  
-;"n\.EMIRC É OÃÇULOS ASSE RAETARIP" ftnirp  
-;"n\" ftnirp  
-;"n\.TSOHETYB ad siarotua sotierid so rignirfni ed" ftnirp  
-;"n\asonimirc atudnoc a evercsed euq lanep ogidóc od" ftnirp  
-;"n\481 ogitra on otsiverp emirc é oãçazirotua mes" ftnirp  
-;"n\oãçulos asse recenrof uo rednev ,rahlitrapmoC" ftnirp  
-;"n\" ftnirp  
-;"n\TSOHETYB AD ETRAP ZAF LAIRETAM ESSE" ftnirp  
-;"n\" ftnirp  
-;"n\:........:::::..::::::::..::::::........." ftnirp
-;"n\:######## ::::## :::::::## :::::######## " ftnirp
-;"n\:::::::## ::::## :::::::## ::::## ::::## " ftnirp
-;"n\::::...## ::::## :::::::## ::::## ....## " ftnirp
-;"n\:::###### ::::## :::::::## .::::######## " ftnirp
-;"n\:::::::## ::::## ::::::#### .::## ::::## " ftnirp
-;"n\::.....## ::..## ...::##':## .:## ....## " ftnirp
-;"n\:########':########':##':::##'::########'" ftnirp
-;"}NEERG{$" ftnirp
-
-"n\n\" ftnirp  
-
-raelc  
-{ )(rennab_tnirp
-
+#!/bin/bash
 #######################################
-"m63;1[330\"=THGIL_NAYC ylnodaer
-"m73;0[330\"=THGIL_YARG ylnodaer
-"m33;1[330\"=WOLLEY ylnodaer
-"m73;1[330\"=ETIHW ylnodaer
-"m23;1[330\"=NEERG ylnodaer
-"m13;1[330\"=DER ylnodaer
-roloc #
+# color
+readonly RED="\033[1;31m"
+readonly GREEN="\033[1;32m"
+readonly WHITE="\033[1;37m"
+readonly YELLOW="\033[1;33m"
+readonly GRAY_LIGHT="\033[0;37m"
+readonly CYAN_LIGHT="\033[1;36m"
 #######################################
-hsab/nib/!#
+
+print_banner() {
+  clear
+
+  printf "\n\n"
+
+printf "${GREEN}";
+printf "'########::'##:::'##:'########:'########:\n";
+printf " ##.... ##:. ##:'##::... ##..:: ##.....::\n";
+printf " ##:::: ##::. ####:::::: ##:::: ##:::::::\n";
+printf " ########::::. ##::::::: ##:::: ######:::\n";
+printf " ##.... ##:::: ##::::::: ##:::: ##...::::\n";
+printf " ##:::: ##:::: ##::::::: ##:::: ##:::::::\n";
+printf " ########::::: ##::::::: ##:::: ########:\n";
+printf ".........::::::..::::::::..:::::........:\n";
+  printf "\n";
+  printf "ESSE MATERIAL FAZ PARTE DA BYTEHOST\n";
+  printf "\n";
+  printf "Compartilhar, vender ou fornecer essa solução\n";
+  printf "sem autorização é crime previsto no artigo 184\n";
+  printf "do código penal que descreve a conduta criminosa\n";
+  printf "de infringir os direitos autorais da BYTEHOST.\n";
+  printf "\n";
+  printf "PIRATEAR ESSA SOLUÇÃO É CRIME.\n";
+  printf "\n";
+  printf " © Bytehost.com.br\n";
+  printf "${NC}";
+  sleep 2
+
+  printf "\n"
+  printf "\n"
+  }
+print_banner
+# Verifica se o usuário é root
+if [ "$(id -u)" -ne 0 ]; then
+    echo "Este script precisa ser executado como root. Executando sudo su..."
+    sudo su
+    sleep 2
+fi
+
+# Verifica se o usuário está no diretório /root/
+if [ "$PWD" != "/root" ]; then
+    echo "Mudando para o diretório /root/"
+    cd /root || exit
+fi
+
+# Verifica se está usando Ubuntu 20.04
+if ! grep -q 'Ubuntu 20.04' /etc/os-release; then
+    echo "Este script recomenda o uso do Ubuntu 20.04."
+    sleep 3
+fi
+
+system_date 
+system_date () {
+  print_banner
+  printf "${WHITE} �� Ajustando horario do Servidor...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo timedatectl set-timezone America/Belem
+EOF
+
+  sleep 2
+}
+system_date  
+
+system_update 
+system_update() {
+  print_banner
+  printf "${WHITE} �� Vamos atualizar o sistema...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  apt -y update && apt -y upgrade
+EOF
+
+  sleep 2
+}
+system_update 
+
+system_dependencies
+system_dependencies() {
+  print_banner
+  printf "${WHITE} �� Instalando dependencias...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo apt-get install apt-utils -y && sudo apt-get install net-tools -y
+EOF
+
+  sleep 2
+}
+system_dependencies
+
+system_java
+system_java() {
+  print_banner
+  printf "${WHITE} �� Instalando Java JDK...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo apt install openjdk-11-jdk openjdk-11-jre
+
+EOF
+
+  sleep 2
+}
+system_java
+
+system_db
+system_db() {
+  print_banner
+  printf "${WHITE} �� Instalando Banco de Dados...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo apt install mysql-server -y && sudo apt-get install mysql-client -y
+EOF
+  sleep 2
+}
+system_db
+
+system_db_conf
+system_db_conf() {
+  print_banner
+  printf "${WHITE} �� Configurando Banco de Dados...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo mysql -u root -pa8e3dd84
+  CREATE DATABASE metabase;
+  CREATE USER 'metabase_user'@'localhost' IDENTIFIED BY 'Mj@45900';
+  GRANT ALL ON metabase.* TO 'metabase_user'@'localhost' WITH GRANT OPTION;
+  FLUSH PRIVILEGES;
+  EXIT;
+EOF
+
+  sleep 2
+}
+system_db_conf
+
+metabase_download
+metabase_download() {
+  print_banner
+  printf "${WHITE} �� Donwload do Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  sudo mkdir /home/metabase
+  cd /home/metabase
+  sudo wget https://downloads.metabase.com/v0.49.10/metabase.jar
+  
+EOF
+  sleep 2
+}
+metabase_download
+
+metabase_config
+metabase_config() {
+  print_banner
+  printf "${WHITE} �� Aplicando permissoes ao Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  cd /home/metabase
+  sudo chmod 777 /opt/metabase
+  sudo groupadd -r metabase
+  sudo useradd -r -s /bin/false -g metabase metabase
+  sudo chown -R metabase:metabase /opt/metabase
+  sudo touch /var/log/metabase.log
+  sudo chown metabase:metabase /var/log/metabase.log
+  sudo touch /etc/default/metabase
+  sudo chmod 777 /etc/default/metabase
+  
+EOF
+  sleep 2
+}
+metabase_config
+
+metabase_config_log
+metabase_config_log() {
+  print_banner
+  printf "${WHITE} �� Criando logs do Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  cd /etc/rsyslog.d/
+  cat > metabase.conf << 'END'
+if "${programname}" == 'metabase' then /var/log/metabase.log
+& stop
+END
+    sudo chmod 777 /var/log/metabase.log
+    sudo systemctl restart rsyslog.service
+EOF
+  sleep 2
+# aqui ainda tem que editar manualmente o aqruivo comando: nano etc/rsyslog.d/metabase.conf 
+# editar a primeira linha pra ficar assim: if $programname == 'metabase' then /var/log/metabase.log
+}
+metabase_config_log
+
+metabase_config_db
+metabase_config_db() {
+  print_banner
+  printf "${WHITE} �� Conectado ao banco de dados do Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  cd /etc/default/
+  cat > metabase << 'END'
+MB_PASSWORD_COMPLEXITY=strong
+MB_PASSWORD_LENGTH=10
+MB_DB_TYPE=mysql
+MB_DB_DBNAME=metabase
+MB_DB_PORT=3306
+MB_DB_USER=metabase_user
+MB_DB_PASS=Prud3246@
+MB_DB_HOST=localhost
+MB_EMOJI_IN_LOGS=true
+MB_JETTY_PORT=3000
+END
+    sudo chmod 775 /var/log/metabase.log
+    sudo systemctl restart rsyslog.service
+EOF
+  sleep 2
+}
+metabase_config_db
+
+metabase_config_serv
+metabase_config_servico() {
+  print_banner
+  printf "${WHITE} �� Criando servico  do Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+  cd /etc/systemd/system/
+  cat > metabase.service << 'END'
+[Unit]
+Description=Metabase server
+After=syslog.target
+After=network.target
+[Service]
+WorkingDirectory=/home/metabase/
+ExecStart=/usr/bin/java -Duser.timezone=UTC -jar /home/metabase/metabase.jar
+EnvironmentFile=/etc/default/metabase
+User=metabase
+Type=simple
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=metabase
+SuccessExitStatus=143
+TimeoutStopSec=120
+Restart=always
+[Install]
+WantedBy=multi-user.target
+
+END
+
+EOF
+  sleep 2
+}
+metabase_config_servico
+
+
+metabase_ativacao
+metabase_ativacao() {
+  print_banner
+  printf "${WHITE} �� Ativando o Metabase...${GRAY_LIGHT}"
+  printf "\n\n"
+
+  sleep 2
+
+  sudo su - root <<EOF
+    sudo systemctl daemon-reload
+    sudo systemctl enable metabase
+    sudo systemctl restart metabase
+    history -c
+EOF
+  sleep 2
+}
+metabase_ativacao
+
+## bash <(curl -sSL setup.bytehost.com.br)
