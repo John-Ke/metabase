@@ -1,2 +1,1 @@
-# metabase
-metabase
+instalador automatico do metabase
